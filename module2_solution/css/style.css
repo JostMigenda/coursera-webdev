@@ -37,9 +37,8 @@ div h2 {
     width: 100px;
     border: 1px solid black;
     padding: 3px;
-    /* Set margin: -8px to counteract the div’s padding, -1px to counteract the border width. */
-    margin-top: -9px;
-    margin-right: -9px;
+    /* For top and right margin: -8px to counteract the div’s padding, -1px to counteract the border width. */
+    margin: -9px -9px 8px 0px;
 }
 
 div p {
