@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div {
+    border: 1px solid black;
+    padding: 8px;
+    margin-bottom: 15px;
+    background-color: #999999;
+}
+
+#beef, #chicken, #sushi {
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+    float: left;
+}
+
+div h2 {
+    font-size: 1.25em;
+    text-align: center;
+    float: right;
+    width: 100px;
+    border: 1px solid black;
+    padding: 3px;
+    /* Set margin: -8px to counteract the div’s padding, -1px to counteract the border width. */
+    margin-top: -9px;
+    margin-right: -9px;
+}
+
+div p {
+    clear: both;
+}
+
+#beef h2 {
+    background-color: #b34d48;
+    color: white;
+}
+
+#chicken h2 {
+    background-color: #cc9a99;
+}
+
+#sushi h2 {
+    background-color: #e2d19f;
+}
+
+@media (min-width: 992px) {
+    /* Styles for desktop layout … */
+    #beef, #chicken, #sushi {
+        width: 31.33%;
+        /* 33.33% minus 1% margin each on the left/right */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablet layout … */
+    #beef, #chicken {
+        width: 48%;
+        /* 50% minus 1% margin each on the left/right */
+    }
+    /* #sushi will have 100% width automatically */
+}
+
+@media (max-width: 767px) {
+    /* Styles for phone layout … */
+    /* all three divs will automatically fill the full width */
+}
