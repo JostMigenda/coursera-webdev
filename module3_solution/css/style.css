@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+}
