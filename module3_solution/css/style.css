@@ -13,3 +13,13 @@ body {
 .navbar-dark hr {
     background-color: #ffffff;
 }
+
+#main-content {
+    margin-top: 20px;
+}
+
+#chicken {
+    min-height: 1000px;
+    background-color: bisque;
+    padding-top: 15px;
+}
