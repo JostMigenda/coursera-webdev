@@ -9,9 +9,20 @@
 </head>
 <body>
     <header>
-        <nav id="header-nav" class="navbar navbar-default">
-            <div class="container">
-                [Insert header here]
+        <nav id="header-nav" class="navbar navbar-dark bg-dark">
+            <div class="navbar-brand">Food, LLC</div>
+
+            <!-- '.d-sm-none' is the Bootstrap 4 equivalent of '.visible-xs' -->
+            <button class="navbar-toggler d-sm-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-none" id="navbarNav">
+                <hr>
+                <ul class="navbar-nav navbar-text">
+                    <li class="nav-item">Chicken</li>
+                    <li class="nav-item">Beef</li>
+                    <li class="nav-item">Sushi</li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -26,5 +37,9 @@
     <footer class="panel-footer">
         [Insert footer here]
     </footer>
+
+    <!-- Bootstrap requires including jQuery first, then its own script file -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
