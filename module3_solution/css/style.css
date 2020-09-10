@@ -11,7 +11,25 @@ body {
 }
 
 .navbar-dark hr {
-    background-color: #ffffff;
+    background-color: lightgray;
+    margin-bottom: 0;
+}
+
+#navbarNav, .navbar-nav {
+    width: 100%;
+}
+
+#navbarNav .nav-item {
+    display: block;
+    width: 100%;
+    padding-left: 8px;
+    line-height: 2.5;
+}
+
+#navbarNav .nav-item:hover {
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;
 }
 
 #main-content {
