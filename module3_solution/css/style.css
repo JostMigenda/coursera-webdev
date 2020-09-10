@@ -18,8 +18,14 @@ body {
     margin-top: 20px;
 }
 
-#chicken {
-    min-height: 1000px;
+#chicken, #beef, #sushi {
+    min-height: 500px;
     background-color: bisque;
     padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+#chicken {
+    min-height: 1000px;
 }
