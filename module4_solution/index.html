@@ -11,6 +11,30 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <h1>Module 4 Solution Starter</h1>
+  <h1>Module 4 Solution</h1>
+  <p style="font-size: 2em; color: red;">Please check the console (in the developer tools) to see the output.</p>
+  
+  <p>(As a bonus, I’m also including the output in the following &lt;pre&gt; tag. If you’re curious how that works, check the source code of this document!)</p>
+  
+  <pre id="output"></pre>
+  <script type="text/javascript">
+    var pre = document.getElementById("output")
+    pre.textContent = (function () {
+        // This IIFE is similar to the code in script.js; one exception is noted below.
+        var greetings = ""
+        var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+        for (var i = 0; i < names.length; i++) {
+          name = names[i]
+          var firstLetter = name.charAt(0).toLowerCase()
+          if (firstLetter === 'j') {
+            // Can’t use the speak() function here, since it writes to the console instead of returning the text.
+            greetings += "Good Bye " + name + '\n'
+          } else {
+            greetings += "Hello " + name + '\n'
+          }
+        }
+        return greetings
+      })()
+  </script>
 </body>
 </html>
